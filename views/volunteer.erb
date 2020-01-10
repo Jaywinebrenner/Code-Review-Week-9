@@ -7,13 +7,8 @@
   <label for="name">Rename volunteer</label>
   <input id="name" name="name" type="text">
 
-  <button type="submit">Update volunteer</button>
-</form>
-
-<form action="/projects/<%= @volunteer.project.id %>/volunteers/<%= @volunteer.id %>" method="post">
-  <input name="_method" type="hidden" value="delete">
-
   <button type="submit">Update Volunteer</button>
 </form>
+
 
 <a href="/projects/<%= @volunteer.project.id %>">Back to <%= @volunteer.project.title %></a>

@@ -14,7 +14,7 @@ h1{
   font-family: 'Candal', sans-serif;
 }
 
-#n, #name{
+#n, #name, #volunteer_name{
   text-align: center;
   width: 30%;
   display: block;
