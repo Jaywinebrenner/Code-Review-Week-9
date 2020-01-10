@@ -61,7 +61,6 @@ get ('/projects/:id/volunteers/:volunteer_id') do
   if @volunteer != nil
     erb(:volunteer)
   else
-    # Need to define @project and reference the project id to use in noVolunteer.erb
     @project = Project.find(params[:id].to_i())
     erb(:noVolunteer)
   end

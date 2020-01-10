@@ -2,3 +2,19 @@ body{
   text-align: center;
   background-color: lightblue;
 }
+
+
+.header{
+
+border: 3px solid black;
+margin-bottom: 80px;
+}
+
+h1{
+  font-size: 5rem;
+  font-family: 'Candal', sans-serif;
+}
+
+input{
+   width: 10%;
+}
