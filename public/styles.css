@@ -4,14 +4,23 @@ body{
 }
 
 .header{
+  margin: auto;
+  height: 10%;
+  width: 40%;
   background-color: #c8dad3;
   border: 3px solid black;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
+  border-radius: 3%;
 }
 
 h1{
-  font-size: 5rem;
+  font-size: 4rem;
   font-family: 'Candal', sans-serif;
+  padding-bottom: 26px;
+}
+
+h2{
+  font-size: 2rem;
 }
 
 #n, #name, #volunteer_name{
@@ -22,10 +31,27 @@ h1{
 }
 
 #gary{
+  margin-top: 0;
   font-family: 'Shadows Into Light', cursive;
+  font-size: 9rem;
+  line-height: 9rem;
 }
 
+ul {
+  text-align: center;
+  list-style-position: inside;
+}
 
 li{
   list-style-type: none;
+}
+
+button {
+  background-color: #63707e;
+  color: #f2f6f5;
+}
+
+button:hover {
+color: #af460f;
+
 }
