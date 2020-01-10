@@ -18,16 +18,17 @@ get('/projects') do
   erb(:projects)
 end
 
+post ('/projects') do
+  title = params[:project_title]
+  project = Project.new({:title => title, :id => nil})
+  project.save()
+  redirect to('/projects')
+end
+
 get ('/projects/new') do
   erb(:new_project)
 end
 
-post ('/projects') do
-  name = params[:project_name]
-  project = Project.new({:name => name, :id => nil})
-  project.save()
-  redirect to('/projects')
-end
 
 get ('/projects/:id') do
   @project = Project.find(params[:id].to_i())
