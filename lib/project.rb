@@ -46,7 +46,6 @@ class Project
   end
 
   def self.sort
-    # lowercasing 'title' first allows proper alphabetization, i.e. 'Black' comes before 'apple' if not lowercased because of character value
     sorted_projects = DB.exec("SELECT * FROM projects ORDER BY lower(title);")
     projects = []
     sorted_projects.each() do |project|

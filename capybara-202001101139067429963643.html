@@ -1,4 +1,13 @@
-
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>All Sales Vinyl</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+  </head>
+  <body>
+    <h1>Gary's Philanthropic Database of Non-Profit Volunteers</h1>
+    <div class="container">
+      
 
 
 <form action="/projects" method="post">
@@ -11,12 +20,8 @@
 
 
 <h2>Available Projects</h2>
-<% if @projects.any? %>
-  <ul>
-    <% @projects.each do |project| %>
-      <li><a href="/projects/<%= project.id %>"><%= project.title %></a></li>
-    <% end %>
-  </ul>
-<% else %>
   <p>There are currently no records to display.</p>
-<% end %>
+
+    </div>
+  </body>
+</html>

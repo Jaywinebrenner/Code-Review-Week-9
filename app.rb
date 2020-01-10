@@ -14,12 +14,12 @@ get('/') do
 end
 
 get('/projects') do
-  @projects = Project.sort
+  @projects = Project.all
   erb(:projects)
 end
 
 post ('/projects') do
-  title = params[:project_title]
+  title = params[:title]
   project = Project.new({:title => title, :id => nil})
   project.save()
   redirect to('/projects')
