@@ -3,20 +3,22 @@
 
 <form action="/projects" method="post">
   <div class="form-group">
-    <label for="project_name">Project name</label>
-    <input id="n" name="title" class="form-control" type="text">
+    <input id="n" name="title" class="form-control" type="text" placeholder="Enter Project Name Here">
   </div>
   <button type="submit" class="btn">Create Project</button>
 </form>
 
 
-<h2>Available Projects</h2>
+
 <% if @projects.any? %>
-  <ul>
-    <% @projects.each do |project| %>
-      <li><a href="/projects/<%= project.id %>"><%= project.title %></a></li>
+    <% @projects.each_with_index do |project, i| %>
+    <% if i > 0 %>
+    <hr class='spacer'>
     <% end %>
-  </ul>
-<% else %>
-  <p>There are currently no records to display.</p>
-<% end %>
+    <a href="/projects/<%= project.id %>"><%= project.title %></a>
+
+    <% end %>
+    <% else %>
+    <hr class='spacer'>
+    <p>There are currently no non-profit orgnanizations to display.</p>
+    <% end %>

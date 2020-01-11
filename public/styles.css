@@ -9,6 +9,7 @@ body{
   width: 40%;
   background-color: #c8dad3;
   border: 3px solid black;
+  margin-top: 20px;
   margin-bottom: 50px;
   border-radius: 3%;
 }
@@ -49,9 +50,33 @@ li{
 button {
   background-color: #63707e;
   color: #f2f6f5;
+  margin-bottom: 20px;
 }
 
 button:hover {
 color: #af460f;
+}
 
+.spacer {
+  color: #af460f;
+}
+
+.italics{
+  font-style: italic;
+  display: inline;
+}
+
+#volunteer-button{
+  margin-bottom: 20px;
+}
+
+#delete{
+  border-radius: 50%;
+  padding: 20px 20px;
+  background-color: #af460f;
+}
+
+hr{
+  border: 2px dotted #c8dad3;
+  width: 20%;
 }

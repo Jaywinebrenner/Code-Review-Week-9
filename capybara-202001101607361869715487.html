@@ -12,9 +12,25 @@
       <h1><span id='gary'>Gary's </span> Philanthropic Database of Non-Profit Volunteers</h1>
     </div>
     <div class="container">
-      <%= yield %>
+      
+
+
+<form action="/projects" method="post">
+  <div class="form-group">
+    <label for="project_name">Project name</label>
+    <input id="n" name="title" class="form-control" type="text">
+  </div>
+  <button type="submit" class="btn">Create Project</button>
+</form>
+<hr class='spacer'>
+
+
+
+    <hr class='spacer'>
+    <p>There are currently no non-profit orgnanizations to display.</p>
+    
+
     </div>
-    <hr>
     <img src="/gary.png" alt="A picture of a man named gary">
   </body>
 </html>
